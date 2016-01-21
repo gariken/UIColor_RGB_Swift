@@ -8,7 +8,7 @@
 
 func UIColorFromRGB(colorCode: String, alpha: Float = 1.0) -> UIColor {
             let scanner = NSScanner(string:colorCode)
-            var color:UInt32 = 0;
+            var color:UInt32 = 0
             scanner.scanHexInt(&color)
     
             let mask = 0x000000FF
